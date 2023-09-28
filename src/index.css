@@ -1,0 +1,118 @@
+@font-face {
+    font-family: Visitor;
+    src: url(fonts/visitor1.ttf);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+
+    font-family: "Mulish" ,"Silkscreen", serif;
+    font-size: larger;
+    background-color: #5293ad;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar button {
+    padding: 0.25em 1em;
+    margin: 0px 0.25em;
+    
+    font-size: large;
+
+    border: none;
+    background: none;
+
+
+}
+
+#navbar button:hover {
+    color: rgb(134, 214, 246);
+}
+
+#main {
+    padding-bottom: 150px;
+}
+
+.section {
+    padding: 2em 3em;
+    margin: 0px 50px;
+    background-color: white;
+}
+
+.section#about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section#about .sub-section2 {
+    flex-shrink: 1.5;
+    margin-left: 2em;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 50px;
+    flex-grow: 1;
+    outline: solid #017fb1;
+}
+
+img {
+    width: 100%;
+}
+
+/* To be use for setting size for game thumbnails */
+img.game_thumbnail {
+    height: auto;
+    max-width: 100%;
+}
+
+img#ID_pic {
+    height: auto;
+    max-width: 50%;
+}
+
+#footer {
+    height: 150px;
+
+    margin-top: -150px;
+    position: relative;
+    
+    color: white;
+}
+
+#contact_info {
+    padding: 1em;
+}

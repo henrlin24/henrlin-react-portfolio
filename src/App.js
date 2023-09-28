@@ -1,9 +1,22 @@
+import Header from "./components/Header";
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-      Hello
-    </div>
+    <>
+      <div id='main'>
+        <Header />
+        <br></br>
+        <Navbar />
+        <br></br>
+        <About />  
+      </div>
+      
+      
+      <Footer />
+    </>
   );
 }
 
