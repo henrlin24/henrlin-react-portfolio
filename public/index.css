@@ -38,15 +38,14 @@ header {
     margin: 0px 0.25em;
     
     font-size: large;
+    color: white;
 
     border: none;
     background: none;
-
-
 }
 
 #navbar button:hover {
-    color: rgb(134, 214, 246);
+    color: rgb(188, 188, 188);
 }
 
 #main {
@@ -57,36 +56,84 @@ header {
     padding: 2em 3em;
     margin: 0px 50px;
     background-color: white;
+
+    border: 5px solid;
+    border-radius: 1em;
+    border-color: rgb(178, 178, 178);
 }
 
 .section#about {
     display: flex;
     flex-direction: row;
+    flex-flow: wrap;
     align-items: center;
+    justify-content: flex-start;
 }
 
-.section#about .sub-section2 {
-    flex-shrink: 1.5;
-    margin-left: 2em;
+.section .sub-section {
+    width: 100%;
+}
+
+.section#about .sub-section.image .image {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.section#skills #external_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    max-width: 125px;
+}
+
+.section .icon {
+    height: auto;
+    max-width: 50px;
+
+    background: rgb(178, 178, 178);
+    border-radius: 2.5em;
+    padding: 5px;
+}
+
+.section .icon:hover{
+    background-color: rgb(112, 112, 112);
 }
 
 .games {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.gameContainer {
+    border-bottom: 15px solid white;
 }
 
 .game {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
 
     padding: 50px;
     flex-grow: 1;
-    outline: solid #017fb1;
+    border: 15px solid #5293ad;
+    border-radius: 1em;
+    max-width: 400px;
+    min-height: 872px;
+}
+
+.game a {
+    max-width: 100%;
+}
+
+.game iframe {
+    max-width: 100%;
 }
 
 img {
@@ -101,7 +148,9 @@ img.game_thumbnail {
 
 img#ID_pic {
     height: auto;
-    max-width: 50%;
+    max-width: 500px;
+
+    border-radius: 2em;
 }
 
 #footer {
